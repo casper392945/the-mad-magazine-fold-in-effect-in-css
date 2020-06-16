@@ -1,2 +1,2 @@
-# the-mad-magazine-gold-in-effect-in-css
+# the-mad-magazine-fold-in-effect-in-css
 GitHub Pages
