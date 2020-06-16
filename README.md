@@ -1,2 +1,2 @@
-# the-mad-magazine-fold-in-effect-in-css
+# The Mad Magazine Fold-In Effect in CSS
 GitHub Pages
