@@ -1,0 +1,166 @@
+{
+  "settings": {
+    "name": "The Mad Magazine Fold-In Effect in CSS",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Exo",
+        "display1Size": 4.25,
+        "display2Font": "Exo",
+        "display2Size": 3,
+        "display5Font": "Exo",
+        "display5Size": 1.5,
+        "display7Font": "Exo",
+        "display7Size": 1,
+        "display4Font": "Exo",
+        "display4Size": "0.8",
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.0.7",
+    "siteFonts": [
+      {
+        "css": "'Rubik', sans-serif",
+        "name": "Rubik",
+        "url": "https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i"
+      },
+      {
+        "css": "'Exo', sans-serif",
+        "name": "Exo",
+        "url": "https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      },
+      {
+        "css": "'Exo 2', sans-serif",
+        "name": "Exo 2",
+        "url": "https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": false,
+    "imageResize": false,
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "lazyType": "nothing",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "witsec-language": false,
+    "witsec-white-label": false,
+    "witsec-mailform": false,
+    "pwa-switcher": false,
+    "htmltag": "<html>",
+    "uniqCompNum": 1,
+    "versionPublish": "5.0.7"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "The Mad Magazine Fold-In Effect in CSS",
+        "meta_descr": "The Mad Magazine Fold-In Effect in CSS",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".jaffee": {
+              "position": "relative",
+              "display": "inline-flex",
+              "transform": "rotateX(10deg)",
+              "transform-style": "preserve-3d",
+              "cursor": "grab"
+            },
+            ".jaffee img": {
+              "width": "auto",
+              "height": "auto",
+              "max-width": "100%",
+              "max-height": "56vh",
+              "opacity": "0"
+            },
+            ".jaffee .a, .jaffee .b, .jaffee .c": {
+              "top": "0",
+              "display": "inline-block",
+              "height": "100%",
+              "background-image": "var(--bg)",
+              "background-size": "cover",
+              "background-repeat": "no-repeat"
+            },
+            ".jaffee .a": {
+              "position": "absolute",
+              "left": "0",
+              "width": "50%",
+              "background-position": "0 0"
+            },
+            ".jaffee .bc": {
+              "position": "absolute",
+              "display": "inline-flex",
+              "width": "50%",
+              "height": "100%",
+              "left": "50%",
+              "transform-origin": "left",
+              "transition": "transform 3s",
+              "transform-style": "preserve-3d"
+            },
+            ".jaffee .b, .jaffee .c": {
+              "position": "relative",
+              "width": "50%"
+            },
+            ".jaffee .b": {
+              "background-position": "66.666667% 0"
+            },
+            ".jaffee .c": {
+              "background-position": "100% 0",
+              "transform-origin": "left",
+              "transition": "transform 2s",
+              "backface-visibility": "hidden"
+            },
+            ".jaffee:hover .bc, .jaffee:active .bc": {
+              "transform": "rotateY(-180deg) translateZ(-1px)",
+              "transition": "transform 2s"
+            },
+            ".jaffee:hover .c, .jaffee:active .c": {
+              "transform": "rotateY(180deg) translateZ(1px)",
+              "transition": "transform 3s"
+            },
+            "P": {
+              "text-align": "center"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">The Mad Magazine Fold-In Effect in CSS</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\"><p>June 8, 2020 - 16 comments</p></h3>\n                <div>\n                    <p>\n                        After 65 years at Mad Magazine, comic artist Al Jaffee announced his retirement. Jaffee was best known for his Mad Fold-Ins, where folding the page would reveal a hidden message in the artwork. Plenty of examples can be found on the web. The problem is, they all show the before and after statically, side by side, which diminishes the magic (see here and here). There’s a whole generation who may have only seen the fold-ins in this format.\n                    </p>\n                </div>\n                <div class=\"jaffee-wrapper\"><span class=\"jaffee\" style=\"--bg: url('https://thomaspark.co/wp/wp-content/uploads/2020/06/MAD-Magazine-520-Fold-in.jpg');\"><span class=\"a\"></span><span class=\"bc\"><span class=\"b\"></span><span class=\"c\"></span></span><img src=\"https://thomaspark.co/wp/wp-content/uploads/2020/06/MAD-Magazine-520-Fold-in.jpg\"></span></div>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s1vdQ0c7fz",
+          "_anchor": "content4-0",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
